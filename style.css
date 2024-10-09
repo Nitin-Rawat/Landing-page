@@ -337,7 +337,7 @@ p {
   /* padding: 40px 20px; */
   border-radius: 8px;
   /* margin-bottom: 40px; */
-  background-image: url("contact-img.jpg");
+  background-image: url("b.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -356,20 +356,20 @@ p {
 
 #address {
   width: 400px;
-  color: rgb(31, 29, 29);
+  color: rgb(218, 211, 211);
   font-size: 1.5em;
   font-weight: bolder;
   width: 100%;
 }
 
 #address h1 {
-  color: black;
-  font-size: 1.5em;
+  color: rgb(224, 216, 216);
+  font-size: 1em;
   font-weight: bolder;
 }
 #address ul {
   width: 100%;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bolder;
 }
 
