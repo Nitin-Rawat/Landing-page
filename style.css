@@ -240,32 +240,29 @@ p {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between; /* Space items evenly */
+  flex-wrap: wrap; /* Allow wrapping of items */
 }
 
 #services li {
   background-color: #2e5274;
-  /* background-image: url("https://picsum.photos/250?image=9"); */
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: rgb(242, 242, 242);
   font-weight: 700;
   font-size: 1.2em;
-  margin: 15px;
+  margin: 15px; /* Space between items */
   padding: 15px;
   border-radius: 8px;
-  width: 20%;
+  width: calc(33.33% - 30px); /* Set width to 33.33% for 3 items per row, accounting for margins */
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#services li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Responsive Styles for larger devices */
+@media (min-width: 768px) {
+  #services li {
+    width: calc(33.33% - 30px); /* Ensure 3 items per row on larger devices */
+  }
 }
 
 .services-icons {
@@ -420,7 +417,6 @@ footer p {
     flex: 1 1 100%; /* Full width on smaller screens */
   }
 
-
   .navbar {
     font-size: 13px;
     /* Add padding for better spacing */
@@ -491,22 +487,22 @@ footer p {
     /* margin-bottom: 20px; */
     flex-grow: 1;
   }
-  
+
   #services li {
     margin: 5px;
   }
 
   .booking-section form {
-        flex-direction: column; /* Stack form elements vertically on smaller screens */
-    }
+    flex-direction: column; /* Stack form elements vertically on smaller screens */
+  }
 
-    .booking-section input {
-        width: 100%; /* Full width for inputs on smaller screens */
-    }
+  .booking-section input {
+    width: 100%; /* Full width for inputs on smaller screens */
+  }
 
-    .booking-section button {
-        width: 100%; /* Full width for button on smaller screens */
-    }
+  .booking-section button {
+    width: 100%; /* Full width for button on smaller screens */
+  }
 }
 
 /* Navbar Styles */
