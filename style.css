@@ -334,9 +334,9 @@ p {
 
 /* Contact Section */
 #contact {
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   border-radius: 8px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   background-image: url("contact-img.jpg");
   background-size: cover;
   background-position: center;
