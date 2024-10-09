@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
@@ -14,13 +16,12 @@
         <ul class="navbar-list">
             <li><a href="#explore">Explore</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#galleries">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
     <header>
-        <img src="r3.webp" alt="Banner Image" class="banner-image" />
+        <img src="r2.jpg" alt="Banner Image" class="banner-image" />
         <div class="header-content">
             <h1>Welcome to Our Landing Page</h1>
             <p>Your gateway to discovering amazing products and services.</p>
@@ -45,90 +46,102 @@
         </div>
     </header>
 
-
     <main>
-
-
         <!-- Explore Section -->
         <section id="explore">
             <h2>Explore</h2>
-            <p>Transform your life with our innovative solution. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Delectus, ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ipsa?Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Delectus, ipsa?</p>
             <div class="explore-images">
-                <img src="r1.jpg" alt="Explore Image 1" />
-                <img src="r2.jpg" alt="Explore Image 2" />
-                <img src="r3.webp" alt="Explore Image 3" />
-            </div>
+                <div class="card">
+                    <img src="r1.jpg" alt="Explore Image 1" />
+                    <div class="card-content">
+                        <h3><i class="fas fa-bed"></i> Standard Room</h3>
+                        <p>From: ₹5000/night</p>
+                        <div class="services-icons">
+                            <i class="fas fa-bed" title="1 Bed"></i> 1
+                            <i class="fas fa-wifi" title="Free Wi-Fi"></i>
+                            <i class="fas fa-utensils" title="Breakfast Included"></i>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="r2.jpg" alt="Explore Image 2" />
+                    <div class="card-content">
+                        <h3><i class="fas fa-star"></i> Deluxe Room</h3>
+                        <p>From: ₹7000/night</p>
+                        <div class="services-icons">
+                            <i class="fas fa-bed" title="1 Bed"></i> 1
+                            <i class="fas fa-wifi" title="Free Wi-Fi"></i>
+                            <i class="fas fa-utensils" title="Breakfast Included"></i>
+                            <i class="fas fa-swimming-pool" title="Swimming Pool"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="r3.webp" alt="Explore Image 3" />
+                    <div class="card-content">
+                        <h3><i class="fas fa-crown"></i> Luxury Room</h3>
+                        <p>From: ₹10000/night</p>
+                        <div class="services-icons">
+                            <i class="fas fa-bed" title="king size bed"></i> king
+                            <i class="fas fa-wifi" title="Free Wi-Fi"></i>
+                            <i class="fas fa-utensils" title="Breakfast Included"></i>
+                            <i class="fas fa-swimming-pool" title="Swimming Pool"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Services Section -->
         <section id="services">
             <h2>Our Services</h2>
             <ul>
-
                 <li>
                     <img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />
                     Room Service
                 </li>
-                <li><img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />
-                    Housekeeping</li>
-                <li><img id="talk" src="talk.png" alt="Consultation Icon" class="icon" /> Breakfast & Dinner</li>
-                <li><img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />Corporate Meals</li>
-                <li><img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />Parking Space</li>
-                <li><img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />Stratgic Location</li>
-
+                <li>
+                    <img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />
+                    Housekeeping
+                </li>
+                <li>
+                    <img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />
+                    Breakfast & Dinner
+                </li>
+                <li>
+                    <img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />
+                    Corporate Meals
+                </li>
+                <li>
+                    <img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />
+                    Parking Space
+                </li>
+                <li>
+                    <img id="talk" src="talk.png" alt="Consultation Icon" class="icon" />
+                    Strategic Location
+                </li>
             </ul>
         </section>
 
+        <!-- Galleries Section -->
+        <section id="galleries">
+            <h2>Gallery</h2>
+            <div class="galleries-container">
+                <div class="gallery">
+                    <img src="g1.jpg" alt="Jane Doe">
+                </div>
+                <div class="gallery">
+                    <img src="g2.jpg" alt="John Smith">
+                </div>
+                <div class="gallery">
+                    <img src="g3.webp" alt="Emily Johnson">
+                </div>
+                <div class="gallery">
+                    <img src="g4.webp" alt="Michael Brown">
+                </div>
 
 
-        <!-- Testimonials Section -->
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonials-container">
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="Jane Doe">
-                    <p>"This service changed my life! Highly recommend to everyone."</p>
-                    <span>- Jane Doe</span>
-                </div>
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="John Smith">
-                    <p>"Exceptional quality and fantastic customer support."</p>
-                    <span>- John Smith</span>
-                </div>
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="Emily Johnson">
-                    <p>"A truly innovative solution that meets all my needs."</p>
-                    <span>- Emily Johnson</span>
-                </div>
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="Michael Brown">
-                    <p>"The team's expertise and dedication exceeded my expectations. Truly outstanding!"</p>
-                    <span>- Michael Brown</span>
-                </div>
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="Sarah Wilson">
-                    <p>"I've seen a significant improvement in my business since using their services. Highly
-                        recommended!"</p>
-                    <span>- Sarah Wilson</span>
-                </div>
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="David Lee">
-                    <p>"Their innovative approach solved problems I didn't even know I had. Game-changer!"</p>
-                    <span>- David Lee</span>
-                </div>
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="Rachel Green">
-                    <p>"The attention to detail and personalized service make them stand out from the competition."</p>
-                    <span>- Rachel Green</span>
-                </div>
-                <div class="testimonial">
-                    <img src="p1.jpg" alt="Thomas Anderson">
-                    <p>"I'm impressed by how they consistently deliver high-quality results. A trustworthy partner!"</p>
-                    <span>- Thomas Anderson</span>
-                </div>
             </div>
         </section>
 
@@ -136,17 +149,13 @@
 
         <!-- Contact Section -->
         <section id="contact">
-
             <div id="address">
-                <h1>Address</h1>
-
+                <h1>Visit Us</h1>
                 <ul>
                     <li>Phone: 1234567890</li>
                     <li>Email: info@example.com</li>
                     <li>1234 Main St, Anytown, USA</li>
                 </ul>
-
-
             </div>
             <form>
                 <h2>Contact Us</h2>
@@ -163,52 +172,52 @@
         <p>&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
 
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const testimonialsContainer = document.querySelector('.testimonials-container');
+            const galleriesContainer = document.querySelector('.galleries-container');
             let isDown = false;
             let startX;
             let scrollLeft;
 
             // Mouse events for desktop
-            testimonialsContainer.addEventListener('mousedown', (e) => {
+            galleriesContainer.addEventListener('mousedown', (e) => {
                 isDown = true;
-                testimonialsContainer.classList.add('active');
-                startX = e.pageX - testimonialsContainer.offsetLeft;
-                scrollLeft = testimonialsContainer.scrollLeft;
+                galleriesContainer.classList.add('active');
+                startX = e.pageX - galleriesContainer.offsetLeft;
+                scrollLeft = galleriesContainer.scrollLeft;
             });
 
-            testimonialsContainer.addEventListener('mouseleave', () => {
+            galleriesContainer.addEventListener('mouseleave', () => {
                 isDown = false;
-                testimonialsContainer.classList.remove('active');
+                galleriesContainer.classList.remove('active');
             });
 
-            testimonialsContainer.addEventListener('mouseup', () => {
+            galleriesContainer.addEventListener('mouseup', () => {
                 isDown = false;
-                testimonialsContainer.classList.remove('active');
+                galleriesContainer.classList.remove('active');
             });
 
-            testimonialsContainer.addEventListener('mousemove', (e) => {
+            galleriesContainer.addEventListener('mousemove', (e) => {
                 if (!isDown) return;
                 e.preventDefault();
-                const x = e.pageX - testimonialsContainer.offsetLeft;
+                const x = e.pageX - galleriesContainer.offsetLeft;
                 const walk = (x - startX) * 3; // Scroll-fast
-                testimonialsContainer.scrollLeft = scrollLeft - walk;
+                galleriesContainer.scrollLeft = scrollLeft - walk;
             });
 
             // Touch events for mobile
-            testimonialsContainer.addEventListener('touchstart', (e) => {
-                startX = e.touches[0].pageX - testimonialsContainer.offsetLeft;
-                scrollLeft = testimonialsContainer.scrollLeft;
+            galleriesContainer.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].pageX - galleriesContainer.offsetLeft;
+                scrollLeft = galleriesContainer.scrollLeft;
             });
 
-            testimonialsContainer.addEventListener('touchmove', (e) => {
-                const x = e.touches[0].pageX - testimonialsContainer.offsetLeft;
+            galleriesContainer.addEventListener('touchmove', (e) => {
+                const x = e.touches[0].pageX - galleriesContainer.offsetLeft;
                 const walk = (x - startX) * 3; // Scroll-fast
-                testimonialsContainer.scrollLeft = scrollLeft - walk;
+                galleriesContainer.scrollLeft = scrollLeft - walk;
             });
         });
-    </script>
+    </script> -->
 
 </body>
 
