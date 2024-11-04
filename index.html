@@ -8,20 +8,31 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body   >
+
     <!-- Navbar -->
-    <nav class="navbar">
-        <ul class="navbar-list">
-            <li><a href="#explore">Explore</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#galleries">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#galleries">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div id="animationelement" ></div>
+    </div>
+
+
     <header>
+        <!-- <img src="r2.jpg" alt="Banner Image" class="banner-image" /> -->
         <img src="r2.jpg" alt="Banner Image" class="banner-image" />
+        <!-- <img src="https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/900x600/14290/120-SM527376.jpg" alt="Banner Image" class="banner-image" /> -->
         <div class="header-content">
             <h1>Comfort. Luxury. Ambience</h1>
             <p>Book your stay for a premium experience</p>
@@ -46,12 +57,22 @@
         </div>
     </header>
 
-    <main>
+    <main >
+
+    <div class="container center-align">
+
+            <div class="row">
+                <div class="col s12 ">
+
+
+                </div>
+            </div>
+        </div>
+
         <!-- Explore Section -->
         <section id="explore">
             <h2>Explore</h2>
-
-            <div class="explore-images">
+           <div class="explore-images">
                 <div class="card">
                     <img src="r1.jpg" alt="Explore Image 1" />
                     <div class="card-content">
@@ -75,7 +96,7 @@
                             <i class="fas fa-wifi" title="Free Wi-Fi"></i>
                             <i class="fas fa-utensils" title="Breakfast Included"></i>
                             <i class="fas fa-swimming-pool" title="Swimming Pool"></i>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -101,27 +122,45 @@
             <h2>Our Services</h2>
             <ul>
                 <li>
-                    <i class="fas fa-concierge-bell icon" title="Room Service"></i>
+
+                    <img src="room-service.png" srcset="
+                    room-service.png 40w,
+                    room-service.png 80w,
+                    room-service.png 100w " sizes="70px" alt="Room Service" title="Room Service"
+                        style="width: 70px; height: 70px;" />
+                    <br>
                     Room Service
+
                 </li>
                 <li>
-                    <i class="fas fa-broom icon" title="Housekeeping"></i>
+                    <img src="breakfast.png" srcset="
+                                    breakfast.png 40w,
+                                    breakfast.png 80w,
+                                    breakfast.png 100w " sizes="70px" alt="Housekeeping" title="Housekeeping"
+                        style="width: 70px; height: 70px;" /> <br>
                     Housekeeping
                 </li>
                 <li>
-                    <i class="fas fa-utensils icon" title="Breakfast & Dinner"></i>
+                    <img src="household.png" srcset="
+                        household.png 40w,
+                        household.png 80w,
+                        household.png 100w " sizes="70px" alt="household" title="Housekeeping"
+                        style="width: 70px; height: 70px;" /> <br>
                     Breakfast & Dinner
                 </li>
                 <li>
-                    <i class="fas fa-briefcase icon" title="Corporate Meals"></i>
+                    <img src="lunch.png" srcset="lunch.png 40w, lunch.png 80w, lunch.png 100w" sizes="70px" alt="Lunch"
+                        title="Lunch" style="width: 70px; height: 70px;" /> <br>
                     Corporate Meals
                 </li>
                 <li>
-                    <i class="fas fa-parking icon" title="Parking Space"></i>
+                    <img src="car.png" srcset="car.png 40w, car.png 80w, car.png 100w" sizes="70px" alt="Parking Space"
+                        title="Parking Space" style="width: 70px; height: 70px;" /> <br>
                     Parking Space
                 </li>
                 <li>
-                    <i class="fas fa-map-marker-alt icon" title="Strategic Location"></i>
+                    <img src="settings.png" srcset="settings.png 40w, settings.png 80w, settings.png 100w" sizes="70px"
+                        alt="Strategic Location" title="Strategic Location" style="width: 70px; height: 70px;" /> <br>
                     Strategic Location
                 </li>
             </ul>
@@ -151,7 +190,8 @@
 
 
         <!-- Contact Section -->
-        <section id="contact">
+        <section id="contact" >
+            
             <div id="address">
                 <h1>Visit Us</h1>
                 <ul>
@@ -169,6 +209,11 @@
                 <button type="submit">Send</button>
             </form>
         </section>
+
+   
+
+
+        <!-- <div style="background-image: url('b.jpg'); width: 100vw; height: 200px; background-size: cover;"></div> -->
     </main>
 
     <footer>
@@ -222,6 +267,21 @@
         });
     </script> -->
 
+    <!-- Google map -->
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.493464100318!2d78.08556257492204!3d30.365342574763606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d7ad2cdf430d%3A0x682280cc770a07ea!2sOFFBEAT%20PIXELS!5e0!3m2!1sen!2sin!4v1729839939504!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#animationelement').addClass("wiggle"); // Add the 'wiggle' class on page load
+        });
+    </script>
 </body>
 
 </html>
